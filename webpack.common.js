@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 const path = require("path");
+const { ProvidePlugin } = require("webpack");
 
 module.exports = {
   module: {
@@ -22,6 +23,11 @@ module.exports = {
       filename: "webpack.json",
       path: path.join(__dirname, "site", "data"),
       prettyPrint: true
+    }),
+    new ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      Popper: ["popper.js", "default"]
     })
   ]
 };

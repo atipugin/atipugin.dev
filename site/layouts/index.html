@@ -1,21 +1,13 @@
-<!doctype html>
-<html lang="{{ .Site.Language.Lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ .Site.Title }}</title>
-
-    {{ $stylesheet := .Site.Data.webpack.main }}
-    {{ with $stylesheet.css }}
-      <link rel="stylesheet" href="{{ relURL . }}">
+{{ define "main" }}
+  <h1>@atipugin</h1>
+  <p class="lead text-muted">Гений, миллиардер, плейбой, филантроп.</p>
+  <h2>Последние посты</h2>
+  <ul class="list-unstyled">
+    {{ range where .Site.RegularPages "Type" "posts" }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <small class="text-muted">{{ .Date.Format "02/01" }}</small>
+      </li>
     {{ end }}
-  </head>
-  <body>
-    <!-- ... -->
-
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
-  </body>
-</html>
+  </ul>
+{{ end }}

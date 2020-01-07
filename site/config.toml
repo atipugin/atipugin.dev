@@ -1,2 +1,18 @@
+baseURL = "/"
 disableKinds = ["RSS", "taxonomyTerm", "sitemap"]
+sectionPagesMenu = "main"
 title = "@atipugin"
+
+[menu]
+  [[menu.main]]
+  identifier = "posts"
+  name = "Блог"
+  url = "/posts"
+
+  [[menu.footer]]
+  name = "GitHub"
+  url = "https://github.com/atipugin"
+
+  [[menu.footer]]
+  name = "Twitter"
+  url = "https://twitter.com/atipugin"
