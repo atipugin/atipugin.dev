@@ -1,0 +1,4 @@
+dist/
+node_modules/
+site/data/webpack.json
+site/resources/
