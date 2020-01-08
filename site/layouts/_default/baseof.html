@@ -3,20 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ .Site.Title }}</title>
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-    {{ $stylesheet := .Site.Data.webpack.main }}
-    {{ with $stylesheet.css }}
-      <link rel="stylesheet" href="{{ relURL . }}">
-    {{ end }}
-
+    <link rel="stylesheet" href="{{ .Site.Data.webpack.main.css | relURL }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap&subset=cyrillic">
   </head>
   <body>
     <header class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-          <img class="rounded-circle" src="{{ relURL "me.png" }}" alt="{{ .Site.Title }}" width="32" height="32">
+          <img class="rounded-circle" src="{{ "me.png" | relURL }}" alt="{{ .Site.Title }}" width="32" height="32">
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#menu">
@@ -58,9 +54,6 @@
       {{ partial "ga" . }}
     {{ end }}
 
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
+    <script src="{{ .Site.Data.webpack.main.js | relURL }}"></script>
   </body>
 </html>
