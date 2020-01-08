@@ -1,0 +1,23 @@
+---
+name: Main
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - uses: peaceiris/actions-hugo@v2
+      - run: yarn install
+      - run: yarn build
+      - uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          EXTERNAL_REPOSITORY: atipugin/atipugin.github.io
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: dist
