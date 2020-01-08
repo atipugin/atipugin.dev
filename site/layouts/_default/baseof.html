@@ -54,6 +54,10 @@
       </div>
     </footer>
 
+    {{ if eq hugo.Environment "production" }}
+      {{ partial "ga" . }}
+    {{ end }}
+
     {{ $script := .Site.Data.webpack.main }}
     {{ with $script.js }}
       <script src="{{ relURL . }}"></script>
