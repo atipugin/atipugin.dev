@@ -22,7 +22,8 @@ module.exports = merge(common, {
       new PurgecssPlugin({
         paths: glob.sync(
           path.join(__dirname, "site", "layouts", "**", "*.html")
-        )
+        ),
+        whitelist: ["show", "collapsed"]
       }),
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin()
