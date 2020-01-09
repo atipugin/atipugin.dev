@@ -1,6 +1,7 @@
 baseURL = "/"
 defaultContentLanguage = "ru"
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
+enableEmoji = true
 languageCode = "ru"
 sectionPagesMenu = "main"
 title = "@atipugin"

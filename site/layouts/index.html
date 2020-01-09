@@ -5,6 +5,7 @@
   <ul class="list-unstyled">
     {{ range where .Site.RegularPages "Type" "posts" }}
       <li>
+        {{ .Params.icon | emojify }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <small class="text-muted">{{ .Date.Format "02/01" }}</small>
       </li>

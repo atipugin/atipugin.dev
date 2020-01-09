@@ -1,7 +1,7 @@
 {{ define "main" }}
   <article>
     <header class="mb-3">
-      <h1>{{ .Title }}</h1>
+      <h1>{{ .Params.icon | emojify }} {{ .Title }}</h1>
       <time class="text-muted">{{ .Date.Format "02/01/2006" }}</time>
     </header>
 

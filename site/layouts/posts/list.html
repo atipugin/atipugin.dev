@@ -4,6 +4,7 @@
     <ul class="list-unstyled">
       {{ range .Pages }}
         <li>
+          {{ .Params.icon | emojify }}
           <a href="{{ .Permalink }}">{{ .Title }}</a>
           <small class="text-muted">{{ .Date.Format "02/01" }}</small>
         </li>
