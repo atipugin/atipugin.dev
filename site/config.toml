@@ -21,3 +21,6 @@ section = ["HTML"]
 [author]
 email = "atipugin@gmail.com"
 name = "Alexander Tipugin"
+
+[params]
+description = "Здесь будет описание"
