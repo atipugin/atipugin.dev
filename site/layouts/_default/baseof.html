@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="{{ .Site.Data.webpack.main.css | relURL }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap&subset=cyrillic">
+
+    {{ range .AlternativeOutputFormats }}
+      {{ printf `<link rel="%s" href="%s" type="%s" title="%s">` .Rel .Permalink .MediaType.Type $.Site.Title | safeHTML }}
+    {{ end }}
   </head>
   <body>
     <header class="navbar navbar-expand-lg navbar-light">

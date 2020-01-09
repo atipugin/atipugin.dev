@@ -1,5 +1,7 @@
 baseURL = "/"
-disableKinds = ["RSS", "taxonomyTerm", "sitemap"]
+defaultContentLanguage = "ru"
+disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
+languageCode = "ru"
 sectionPagesMenu = "main"
 title = "@atipugin"
 
@@ -11,3 +13,11 @@ title = "@atipugin"
   [[menu.footer]]
   name = "Twitter"
   url = "https://twitter.com/atipugin"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML"]
+
+[author]
+email = "atipugin@gmail.com"
+name = "Alexander Tipugin"
