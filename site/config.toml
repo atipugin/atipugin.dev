@@ -22,6 +22,7 @@ section = ["HTML"]
 [author]
 email = "atipugin@gmail.com"
 name = "Alexander Tipugin"
+image = "images/me.png"
 
 [params]
 description = "Здесь будет описание"
