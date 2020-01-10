@@ -15,6 +15,10 @@ title = "@atipugin"
   name = "Twitter"
   url = "https://twitter.com/atipugin"
 
+  [[menu.footer]]
+  name = "RSS"
+  url = "/index.xml"
+
 [outputs]
 home = ["HTML", "RSS"]
 section = ["HTML"]
