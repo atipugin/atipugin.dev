@@ -18,6 +18,7 @@ title = "@atipugin"
   [[menu.footer]]
   name = "RSS"
   url = "/index.xml"
+  weight = -1
 
 [outputs]
 home = ["HTML", "RSS"]
