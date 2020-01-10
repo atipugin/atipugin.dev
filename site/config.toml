@@ -1,6 +1,6 @@
 baseURL = "/"
 defaultContentLanguage = "ru"
-disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 languageCode = "ru"
 sectionPagesMenu = "main"
