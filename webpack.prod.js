@@ -17,7 +17,7 @@ module.exports = merge(common, {
         chunkFilename: "[id]-[hash].css"
       }),
       new OptimizeCssAssetsPlugin(),
-      new TerserPlugin()
+      new TerserPlugin({ extractComments: false })
     ]
   }
 });
