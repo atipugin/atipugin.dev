@@ -5,6 +5,8 @@
       <time class="text-muted">{{ .Date.Format "02/01/2006" }}</time>
     </header>
 
-    {{ .Content }}
+    <div class="content">
+      {{ .Content }}
+    </div>
   </article>
 {{ end }}
