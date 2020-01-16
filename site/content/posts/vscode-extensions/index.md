@@ -16,7 +16,7 @@ EditorConfig - первое расширение, которое я ставлю
 
 Git Blame - простое и супер-удобное расширение для работы с `git blame`. Просто ставите курсор на интересующую строку в файле, нажимаете на кнопку и получаете описание коммита с возможностью перейти на страницу с коммитом на GitHub/GitLab/что-там-у-вас.
 
-![Git Blame](git-blame.gif)
+![Git Blame](/posts/vscode-extensions/git-blame.gif)
 
 Раньше для этих целей я использовал [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), но в какой-то момент устал от его тормозов и перешел на Git Blame.
 
@@ -44,11 +44,11 @@ Better Comments раскрашивает комментарии в коде в �
 
 Так выглядит код без Better Comments:
 
-![Без Better Comments](better-comments-off.png)
+![Без Better Comments](/posts/vscode-extensions/better-comments-off.png)
 
 А так с ним:
 
-![С Better Comments](better-comments-on.png)
+![С Better Comments](/posts/vscode-extensions/better-comments-on.png)
 
 [Открыть на Marketplace](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
@@ -58,7 +58,7 @@ Better Comments раскрашивает комментарии в коде в �
 
 Выглядит примерно так:
 
-![Todo Tree](todo-tree.png)
+![Todo Tree](/posts/vscode-extensions/todo-tree.png)
 
 [Открыть на Marketplace](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
