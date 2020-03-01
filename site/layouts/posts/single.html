@@ -7,4 +7,13 @@
 
     {{ .Content }}
   </article>
+
+  {{ with .Params.twitter_url }}
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text text-muted">Вопросы или предложения по поводу этого поста?</p>
+        <a class="card-link" href="{{ . }}" target="_blank">Обсудить в Твиттере</a>
+      </div>
+    </div>
+  {{ end }}
 {{ end }}
