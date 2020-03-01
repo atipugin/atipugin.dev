@@ -57,10 +57,7 @@
       </div>
     </footer>
 
-    {{ if eq hugo.Environment "production" }}
-      {{ partial "ga" . }}
-    {{ end }}
-
+    {{ template "_internal/google_analytics_async.html" . }}
     <script src="{{ .Site.Data.webpack.main.js | relURL }}"></script>
   </body>
 </html>

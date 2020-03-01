@@ -2,6 +2,7 @@ baseURL = "/"
 defaultContentLanguage = "ru"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
+googleAnalytics = "UA-61037346-7"
 languageCode = "ru"
 sectionPagesMenu = "main"
 title = "@atipugin"
