@@ -13,6 +13,10 @@ title = "@atipugin"
   url = "https://github.com/atipugin"
 
   [[menu.footer]]
+  name = "Telegram"
+  url = "https://t.me/someoneistyping"
+
+  [[menu.footer]]
   name = "Twitter"
   url = "https://twitter.com/atipugin"
 
