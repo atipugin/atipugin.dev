@@ -3,6 +3,10 @@ title: "@atipugin"
 baseURL: https://atipugin.dev
 languageCode: ru
 theme: ["PaperMod"]
+enableRobotsTXT: true
+params:
+  author: Alexander Tipugin
+
 services:
   googleAnalytics:
     ID: G-5K08TDZQB1
