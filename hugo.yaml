@@ -10,3 +10,7 @@ params:
 services:
   googleAnalytics:
     ID: G-5K08TDZQB1
+
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
