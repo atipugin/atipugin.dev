@@ -1,3 +1,6 @@
 ---
 baseURL: https://atipugin.dev
 theme: ["PaperMod"]
+services:
+  googleAnalytics:
+    ID: G-5K08TDZQB1
