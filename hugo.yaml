@@ -1,6 +1,7 @@
 ---
 title: "@atipugin"
 baseURL: https://atipugin.dev
+languageCode: ru
 theme: ["PaperMod"]
 services:
   googleAnalytics:
