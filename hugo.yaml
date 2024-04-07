@@ -6,6 +6,21 @@ theme: ["PaperMod"]
 enableRobotsTXT: true
 params:
   author: Alexander Tipugin
+  defaultTheme: auto
+  ShowReadingTime: true
+
+  homeInfoParams:
+    Title: Привет 👋
+    Content: |-
+      Меня зовут Александр и я backend-разработчик. Последние 12 лет пишу на Ruby, а еще интересуюсь Go. Люблю компьютеры и всё, что с ними связано.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/atipugin
+    - name: linkedin
+      url: https://www.linkedin.com/in/atipugin/
+    - name: telegram
+      url: https://t.me/someoneistyping
 
 services:
   googleAnalytics:
@@ -13,4 +28,4 @@ services:
 
 disableKinds:
   - taxonomy
-  - taxonomyTerm
+  - term
